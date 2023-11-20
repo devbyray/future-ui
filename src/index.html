@@ -7,8 +7,24 @@
 
     <script type="module" src="/build/futureui.esm.js"></script>
     <script nomodule src="/build/futureui.js"></script>
+    <link rel="stylesheet" href="build/tailwind.css" />
   </head>
-  <body>
-    <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
+  <body style="margin: 0; padding: 0">
+    <ft-page>
+      <ft-toolbar text="Future UI"></ft-toolbar>
+      <ft-container>
+        <p>
+          <ft-toggle label="Default toggle" customId="quality"></ft-toggle>
+        </p>
+        <p>
+          <ft-toggle id="toggleQuality" label="Quality toggle" customId="quality"></ft-toggle>
+        </p>
+      </ft-container>
+    </ft-page>
+
+    <script>
+      const toggle = document.querySelector('#toggleQuality');
+      toggle.values = ['good', 'bad'];
+    </script>
   </body>
 </html>

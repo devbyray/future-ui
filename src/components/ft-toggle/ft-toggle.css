@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:host {
+  display: inline-block;
+}
+
+.toggle-wrapper {
+  @apply relative cursor-pointer block w-[64px] bg-gray-300 dark:bg-gray-500 p-1 rounded-full mx-2;
+}
+.toggle-item {
+  @apply bg-red-500 rounded-full w-[24px] h-[24px] transition ease-in-out delay-100 p-1;
+}
+
+.input {
+  @apply hidden;
+}
+
+.active {
+  @apply translate-x-[130%] bg-green-500;
+}

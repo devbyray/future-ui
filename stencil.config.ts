@@ -1,4 +1,11 @@
 import { Config } from '@stencil/core';
+import { postcss } from '@stencil/postcss';
+import autoprefixer from 'autoprefixer';
+
+const purgecss = require('@fullhuman/postcss-purgecss')({
+  content: ['./src/**/*.tsx', './src/**/*.css', './src/index.html'],
+  defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || [],
+});
 
 export const config: Config = {
   namespace: 'futureui',
@@ -19,6 +26,32 @@ export const config: Config = {
     },
   ],
   testing: {
-    browserHeadless: "new",
+    browserHeadless: 'new',
   },
+  globalStyle: 'www/build/tailwind.css',
+  plugins: [
+    postcss({
+      plugins: [
+        require('postcss-import'),
+        require('tailwindcss')('./tailwind.config.ts'),
+        autoprefixer(),
+        ...(process.env.NODE_ENV === 'production' ? [purgecss, require('cssnano')] : []),
+      ],
+    }),
+    // tailwindGlobal({
+    //   tailwindCssPath: './src/styles/tailwind.css',
+    //   tailwindConf: tailwindConfig,
+    //   postcss: {
+    //     plugins: [atImport(), tailwindcss(), autoprefixer()],
+    //   },
+    // }),
+    // tailwind({
+    //   tailwindCssPath: './src/styles/tailwind.css',
+    //   tailwindConf: tailwindConfig,
+    //   postcss: {
+    //     plugins: [atImport(), tailwindcss(), autoprefixer()],
+    //   },
+    // }),
+    // tailwindHMR(),
+  ],
 };
