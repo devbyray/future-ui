@@ -14,10 +14,7 @@
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
   "unpkg": "dist/futureui/futureui.esm.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/devbyray/future-ui.git"
-  },
+  "repository": "https://github.com/devbyray/future-ui",
   "files": [
     "dist/",
     "loader/"
