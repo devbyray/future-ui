@@ -11,8 +11,25 @@ on:
     branches:
     - main
   workflow_dispatch:
-
-# jobs:
+    jobs:
+      publish-gpr:
+        needs: build
+        runs-on: ubuntu-latest
+        permissions:
+          contents: read
+          packages: write
+        steps:
+          - uses: actions/checkout@v3
+          - uses: actions/setup-node@v3
+            with:
+              always-auth: true
+              node-version: 18
+              registry-url: https://npm.pkg.github.com/
+          - run: yarn install
+          - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.yarnrc
+          - run: yarn npm publish
+            env:
+              NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 #   release:
 #     runs-on: ubuntu-latest
 #     steps:
@@ -34,23 +51,3 @@ on:
 #       - uses: simenandre/publish-with-yarn@v1
 #         with:
 #           npm-auth-token: ${{ secrets.NPM_TOKEN }}
-
-jobs:
-  publish-gpr:
-    needs: build
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          always-auth: true
-          node-version: 18
-          registry-url: https://npm.pkg.github.com/
-      - run: yarn install
-      - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.yarnrc
-      - run: yarn npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
