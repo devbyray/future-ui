@@ -21,6 +21,8 @@
   "scripts": {
     "prebuild": "npx tailwindcss -i ./src/styles/tailwind.css -o ./www/build/tailwind.css",
     "build": "stencil build --docs",
+    "prebuild:prod": "npx tailwindcss -i ./src/styles/tailwind.css -o ./www/build/tailwind.css",
+    "build:prod": "stencil build --prod",
     "prestart": "npx tailwindcss -i ./src/styles/tailwind.css -o ./www/build/tailwind.css",
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
