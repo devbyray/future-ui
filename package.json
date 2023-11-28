@@ -1,0 +1,29 @@
+{
+	"name": "futureui",
+	"version": "0.0.2",
+	"description": "",
+	"author": {
+		"name": "Dev By RayRay",
+		"email": "raymon@byrayray.dev"
+	},
+	"description": "Future UI a Web Component Library for Vanilla JS and Vue",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/devbyray/future-ui.git"
+	},
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"install:core": "cd packages/futureui-core/ && npm install",
+		"install:vue": "cd packages/futureui-vue && npm install",
+		"install:example:nuxt": "cd apps/examples/nuxt && npm install",
+		"build:core": "cd packages/futureui-core/ && npm run build",
+		"build:vue": "cd packages/futureui-vue && npm run build",
+		"dev:example:nuxt": "cd apps/examples/nuxt && npm run dev",
+		"publish:core": "cd packages/futureui-core && npm run npm:publish",
+		"publish:vue": "cd packages/futureui-vue && npm run npm:publish",
+		"publish:all": "npm run publish:core && npm run publish:vue"
+	},
+	"keywords": [],
+	"license": "MIT"
+}
