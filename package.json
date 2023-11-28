@@ -1,5 +1,5 @@
 {
-  "name": "futureui",
+  "name": "@devbyray/futureui",
   "version": "0.0.1",
   "author": {
     "name": "Dev By RayRay",
@@ -14,7 +14,10 @@
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
   "unpkg": "dist/futureui/futureui.esm.js",
-  "repository": "https://github.com/devbyray/future-ui",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devbyray/future-ui.git"
+  },
   "files": [
     "dist/",
     "loader/"
@@ -29,7 +32,9 @@
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
     "pregenerate": "npx tailwindcss -i ./src/styles/tailwind.css -o ./www/build/tailwind.css",
-    "generate": "stencil generate"
+    "generate": "stencil generate",
+    "npm:publish": "npm run build:prod && npm publish --access=public",
+    "github:publish": "npm run build:prod && npm publish --access=public"
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^5.0.0",
@@ -51,6 +56,6 @@
   },
   "license": "MIT",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org"
+    "@devbyray:registry": "https://registry.npmjs.org"
   }
 }
