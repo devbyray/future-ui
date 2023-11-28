@@ -1,7 +1,15 @@
 {
 	"name": "@devbyray/futureui-vue",
-	"version": "0.0.3",
-	"description": "",
+	"version": "0.0.4",
+	"author": {
+		"name": "Dev By RayRay",
+		"email": "raymon@byrayray.dev"
+	},
+	"description": "Future UI a Web Component Library for Vanilla JS and Vue",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/devbyray/future-ui.git"
+	},
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
 	"directories": {
@@ -14,10 +22,9 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"build": "npm run tsc",
 		"tsc": "npx tsc -p . --outDir ./dist",
-		"npm:publish": "npm run build && npm publish --access=public"
+		"npm:publish": "npm run build && npm publish --access public"
 	},
-	"author": "",
-	"license": "ISC",
+	"license": "MIT",
 	"publishConfig": {
 		"access": "public"
 	},

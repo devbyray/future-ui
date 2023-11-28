@@ -11,5 +11,10 @@ export default defineNuxtConfig({
 		// 	}
 		// }),
 		// vueJsx()
-	]
+	],
+	vue: {
+		compilerOptions: {
+			isCustomElement: tag => tag.startsWith('ft-')
+		}
+	}
 })

@@ -1,6 +1,6 @@
 {
   "name": "@devbyray/futureui",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": {
     "name": "Dev By RayRay",
     "email": "raymon@byrayray.dev"
@@ -33,7 +33,7 @@
     "test.watch": "stencil test --spec --e2e --watchAll",
     "pregenerate": "npx tailwindcss -i ./src/styles/tailwind.css -o ./www/build/tailwind.css",
     "generate": "stencil generate",
-    "publish": "npm run build:prod && npm publish --access=public"
+    "npm:publish": "npm run build:prod && npm publish --access public"
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^5.0.0",

@@ -18,12 +18,12 @@ The first step for all three of these strategies is to [publish to NPM](https://
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### Node Modules
-- Run `npm install @devbyray/future-ui --save`
+- Run `npm install @devbyray/futureui-vue --save`
 - Put a script tag similar to this `<script type='module' src='node_modules/future-ui/dist/future-ui.esm.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### In a stencil-starter app
-- Run `npm install @devbyray/future-ui --save`
+- Run `npm install @devbyray/futureui-vue --save`
 - Add an import to the npm packages `import '@devbray/future-ui';`
 - Then you can use the element anywhere in your template, JSX, html etc
 
