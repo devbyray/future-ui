@@ -75,29 +75,30 @@ export class FtToggle {
     };
   }
 
+  toggleSvgClasses() {
+    return {
+      'inline-block': this.checked,
+      'hidden': !this.checked,
+    };
+  }
+
   render() {
     return (
       <label htmlFor={this.customId} class="flex items-center">
         <span>{this.label}</span>
-        <div class="toggle-wrapper">
+        <div class={`toggle-wrapper ${this.checked ? 'active' : ''}`}>
           <input id={this.customId} type="checkbox" class="input" onClick={this.toggle.bind(this)} />
           <div class={this.toggleClasses()}>
             <span>
-              {this.checked ? (
-                <svg class="w-10 h-10 transition ease-in-out delay-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
-                  <path
-                    class="fill-white"
-                    d="M40.267 14.628 20.974 33.921l-9.293-9.293a.999.999 0 1 0-1.414 1.414l10 10a.997.997 0 0 0 1.414 0l20-20a.999.999 0 1 0-1.414-1.414z"
-                  />
-                </svg>
-              ) : (
-                <svg class="w-10 h-10 transition ease-in-out delay-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
-                  <path
-                    class="fill-white"
-                    d="M9.016 40.837a1.001 1.001 0 0 0 1.415-.001l14.292-14.309 14.292 14.309a1 1 0 0 0 1.416-1.413L26.153 25.129 40.43 10.836a1 1 0 1 0-1.415-1.413L24.722 23.732 10.43 9.423a1 1 0 1 0-1.415 1.413l14.276 14.293L9.015 39.423a1 1 0 0 0 .001 1.414z"
-                  />
-                </svg>
-              )}
+              <svg class={`transition ease-in-out delay-400 ${!this.checked ? 'w-0 h-0 hidden' : ''}`} xmlns="http://www.w3.org/4000/svg" viewBox="0 0 50 50">
+                <path class="toggle-svg" d="M40.267 14.628 20.974 33.921l-9.293-9.293a.999.999 0 1 0-1.414 1.414l10 10a.997.997 0 0 0 1.414 0l20-20a.999.999 0 1 0-1.414-1.414z" />
+              </svg>
+              <svg class={`transition ease-in-out delay-400 ${this.checked ? 'w-0 h-0 hidden' : ''}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                <path
+                  class="toggle-svg"
+                  d="M9.016 40.837a1.001 1.001 0 0 0 1.415-.001l14.292-14.309 14.292 14.309a1 1 0 0 0 1.416-1.413L26.153 25.129 40.43 10.836a1 1 0 1 0-1.415-1.413L24.722 23.732 10.43 9.423a1 1 0 1 0-1.415 1.413l14.276 14.293L9.015 39.423a1 1 0 0 0 .001 1.414z"
+                />
+              </svg>
             </span>
           </div>
         </div>
