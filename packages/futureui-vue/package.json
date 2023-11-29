@@ -1,6 +1,6 @@
 {
 	"name": "@devbyray/futureui-vue",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"author": {
 		"name": "Dev By RayRay",
 		"email": "raymon@byrayray.dev"
@@ -29,7 +29,7 @@
 		"access": "public"
 	},
 	"dependencies": {
-		"@devbyray/futureui": "*"
+		"@devbyray/futureui": "0.0.5"
 	},
 	"devDependencies": {
 		"vue": "^3.3.9",

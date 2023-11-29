@@ -17,6 +17,6 @@
 		"vue-router": "^4.2.5"
 	},
 	"dependencies": {
-		"@devbyray/futureui-vue": "0.0.4"
+		"@devbyray/futureui-vue": "0.0.5"
 	}
 }
