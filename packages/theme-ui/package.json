@@ -1,0 +1,48 @@
+{
+	"name": "@fui/theme-ui",
+	"version": "0.0.13",
+	"type": "module",
+	"description": "Web Components Theme UI for Future UI",
+	"author": {
+		"name": "Dev By Ray Ray",
+		"email": "ray@byrayray.dev"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/devbyray/future-ui.git"
+	},
+	"scripts": {
+		"dev": "vite",
+		"generate:types": "tsc src/lib.ts --declaration --emitDeclarationOnly --declarationDir dist/",
+		"build": "tsc && vite build && npm run generate:types",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"@fui/core-ui": "*"
+	},
+	"devDependencies": {
+		"typescript": "^5.2.2",
+		"vite": "^5.0.8"
+	},
+	"exports": {
+		"./lib": {
+			"import": "./dist/lib.js",
+			"require": "./dist/lib.cjs",
+			"type": "./dist/lib.d.ts"
+		},
+		"./accordion": {
+			"import": "./dist/accordion.js",
+			"require": "./dist/accordion.cjs",
+			"type": "./dist/components/accordion/index.d.ts"
+		}
+	},
+	"files": [
+		"dist/*",
+		"index.d.ts",
+		"accordion.d.ts"
+	],
+	"types": "./dist/lib.d.ts",
+	"module": "./dist/lib.js",
+	"main": "./dist/lib.js",
+	"license": "ISC"
+}
