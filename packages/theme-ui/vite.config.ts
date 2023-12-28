@@ -1,5 +1,6 @@
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
+import dts from 'vite-plugin-dts'
 
 export default defineConfig({
 	build: {
@@ -9,9 +10,10 @@ export default defineConfig({
 				lib: resolve(__dirname, 'src/lib.ts'),
 				accordion: resolve(__dirname, 'src/components/accordion/index.ts')
 			},
-			name: 'coreporate-ui',
+			name: 'core-ui',
 			// the proper extensions will be added
 			formats: ['cjs', 'es']
 		}
-	}
+	},
+	plugins: [dts()]
 })

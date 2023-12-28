@@ -13,18 +13,19 @@
 	},
 	"scripts": {
 		"dev": "vite",
-		"generate:types": "tsc src/lib.ts --declaration --emitDeclarationOnly --declarationDir dist/ --inspect",
-		"build": "tsc && vite build && npm run generate:types",
+		"build": "tsc && vite build",
 		"preview": "vite preview"
 	},
 	"devDependencies": {
+		"@types/node": "^20.10.5",
 		"typescript": "^5.3.3",
-		"vite": "^5.0.10"
+		"vite": "^5.0.10",
+		"vite-plugin-dts": "^3.7.0"
 	},
 	"exports": {
-		"./lib": {
+		".": {
 			"import": "./dist/lib.js",
-			"require": "./dist/lib.cjs",
+			"require": "./dist/lib.cjs.js",
 			"type": "./dist/lib.d.ts"
 		},
 		"./accordion": {
@@ -40,6 +41,6 @@
 	],
 	"types": "./dist/lib.d.ts",
 	"module": "./dist/lib.js",
-	"main": "./dist/lib.js",
+	"main": "./dist/lib.cjs",
 	"license": "ISC"
 }

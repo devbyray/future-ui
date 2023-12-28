@@ -13,16 +13,17 @@
 	},
 	"scripts": {
 		"dev": "vite",
-		"generate:types": "tsc src/lib.ts --declaration --emitDeclarationOnly --declarationDir dist/",
-		"build": "tsc && vite build && npm run generate:types",
+		"build": "tsc && vite build",
 		"preview": "vite preview"
 	},
 	"dependencies": {
 		"@fui/core-ui": "*"
 	},
 	"devDependencies": {
+		"@types/node": "^20.10.5",
 		"typescript": "^5.3.3",
-		"vite": "^5.0.10"
+		"vite": "^5.0.10",
+		"vite-plugin-dts": "^3.7.0"
 	},
 	"exports": {
 		"./lib": {
