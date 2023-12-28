@@ -1,9 +1,3 @@
-import { Canvas, Meta } from '@storybook/blocks';
-
-import * as AccordionStories from './accordion.stories';
-
-<Meta of={AccordionStories} />
-
 # Accordion
 
 Every component library has a accordion component. This is ours. This one is unstyled, so you can style it however you want.
@@ -18,6 +12,7 @@ npm i @futureui/core-ui
 
 ### When you install via NPM
 Import the library in your JavaScript and your good to go. The library is written in TypeScript, so you get full type support.
+
 ```ts
 import '@futureui/core-ui/accordion';
 ```
@@ -30,9 +25,12 @@ import "https://esm.sh/@futureui/core-ui/accordion";
 ### CodePen
 Check the example on [CodePen](https://codepen.io/devbyray/pen/WNmvoov)
 
+### Storybook
+Check the [documentation](https://future-ui-core.vercel.app/?path=/docs/core-accordion--documentation) on Storybook.
+
+
 
 ## Default
-<Canvas of={AccordionStories.OneOpen} />
 
 ```html
 <fu-core-accordion>
@@ -56,7 +54,6 @@ Check the example on [CodePen](https://codepen.io/devbyray/pen/WNmvoov)
 ```
 
 ## Multiple Open
-<Canvas of={AccordionStories.MultipleOpen} />
 
 ```html
 <fu-core-accordion allow-multiple="true">

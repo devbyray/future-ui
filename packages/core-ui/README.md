@@ -5,3 +5,7 @@ Future UI Core is a Web Component library. We focus on:
 - Accessible web components
 - Extendable web components
 - Minimal to no dependencies
+
+## Components
+
+- Accordion: [documentation](./src/components/accordion/README.md)
