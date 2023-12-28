@@ -18,6 +18,13 @@
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
 		"noFallthroughCasesInSwitch": true,
+
+		"allowJs": false,
+		"esModuleInterop": false,
+		"allowSyntheticDefaultImports": true,
+		"forceConsistentCasingInFileNames": true,
+		"jsx": "preserve",
+		"baseUrl": "./",
 		"paths": {
 			"@/types": ["./src/types"],
 			"@/comp/*": ["./src/components/*"]

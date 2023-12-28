@@ -1,4 +1,4 @@
-import { CoreAccordionContent } from '@fui/core-ui/accordion'
+import { CoreAccordionContent } from '@futureui/core-ui/accordion'
 
 export class ThemeAccordionContent extends CoreAccordionContent {
 	constructor() {

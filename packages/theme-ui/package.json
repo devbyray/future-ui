@@ -1,5 +1,5 @@
 {
-	"name": "@fui/theme-ui",
+	"name": "@futureui/theme-ui",
 	"version": "0.0.13",
 	"type": "module",
 	"description": "Web Components Theme UI for Future UI",
@@ -17,10 +17,12 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
-		"@fui/core-ui": "*"
+		"@futureui/core-ui": "*"
 	},
 	"devDependencies": {
+		"@rollup/plugin-typescript": "^11.1.5",
 		"@types/node": "^20.10.5",
+		"rollup-plugin-typescript-paths": "^1.5.0",
 		"typescript": "^5.3.3",
 		"vite": "^5.0.10",
 		"vite-plugin-dts": "^3.7.0"

@@ -19,12 +19,12 @@
 		"build": "lerna run build",
 		"dev": "lerna run dev",
 		"publish": "lerna run build && npm run core:publish && npm run theme:publish",
-		"core:build": "lerna run build --scope @fui/core-ui",
-		"core:dev": "lerna run dev --scope @fui/core-ui",
-		"core:publish": "npm run core:build && cd packages/core-ui && npm publish",
-		"theme:build": "lerna run build --scope @fui/theme-ui",
-		"theme:dev": "lerna run dev --scope @fui/theme-ui",
-		"theme:publish": "npm run theme:build && cd packages/theme-ui && npm publish"
+		"core:build": "lerna run build --scope @futureui/core-ui",
+		"core:dev": "lerna run dev --scope @futureui/core-ui",
+		"core:publish": "npm run core:build && cd packages/core-ui && npm publish --access public",
+		"theme:build": "lerna run build --scope @futureui/theme-ui",
+		"theme:dev": "lerna run dev --scope @futureui/theme-ui",
+		"theme:publish": "npm run theme:build && cd packages/theme-ui && npm publish --access public"
 	},
 	"keywords": [],
 	"license": "MIT",

@@ -1,6 +1,6 @@
 {
-	"name": "@fui/core-ui",
-	"version": "0.0.13",
+	"name": "@futureui/core-ui",
+	"version": "0.0.14",
 	"type": "module",
 	"description": "Web Components Core UI for Future UI",
 	"author": {
@@ -17,7 +17,9 @@
 		"preview": "vite preview"
 	},
 	"devDependencies": {
+		"@rollup/plugin-typescript": "^11.1.5",
 		"@types/node": "^20.10.5",
+		"rollup-plugin-typescript-paths": "^1.5.0",
 		"typescript": "^5.3.3",
 		"vite": "^5.0.10",
 		"vite-plugin-dts": "^3.7.0"
