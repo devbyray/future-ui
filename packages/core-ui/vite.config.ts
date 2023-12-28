@@ -13,11 +13,11 @@ export default defineConfig({
 			// Could also be a dictionary or array of multiple entry points
 			entry: {
 				lib: resolve(__dirname, 'src/lib.ts'),
-				accordion: resolve(__dirname, 'src/components/accordion/index.ts')
+				accordion: resolve(__dirname, 'src/components/accordion/elements.ts')
 			},
-			name: 'core-ui',
+			name: 'core-ui'
 			// the proper extensions will be added
-			formats: ['cjs', 'es']
+			// formats: ['cjs', 'es']
 		},
 		rollupOptions: {
 			plugins: [

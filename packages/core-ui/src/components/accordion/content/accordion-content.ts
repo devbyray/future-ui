@@ -6,7 +6,6 @@ export class CoreAccordionContent extends BaseComponent {
 
 	constructor(options: CoreAccordionItemOptions) {
 		super()
-		console.log('CoreAccordionContent', options)
 
 		const template = document.createElement('template')
 		template.innerHTML = `

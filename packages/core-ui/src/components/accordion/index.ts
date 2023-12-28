@@ -1,4 +1,4 @@
-export * from './header/accordion-header'
-export * from './accordion/accordion'
-export * from './content/accordion-content'
-export * from './item/accordion-item'
+export { CoreAccordionHeader } from './header/accordion-header'
+export { CoreAccordion } from './accordion/accordion'
+export { CoreAccordionContent } from './content/accordion-content'
+export { CoreAccordionItem } from './item/accordion-item'

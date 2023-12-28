@@ -3,6 +3,8 @@ import { iAccordionItemEmit } from '../../../types'
 import { BaseComponent } from '../../base.component'
 
 export class CoreAccordion extends BaseComponent {
+	static observedAttributes = ['allow-multiple']
+
 	private items: CoreAccordionItem[] = []
 	private allowMultiple: boolean = false
 	itemSelector: string = 'fu-core-accordion-item'
@@ -22,6 +24,15 @@ export class CoreAccordion extends BaseComponent {
 	}
 
 	connectedCallback() {
+		this.init()
+	}
+
+	attributeChangedCallback(name: string, oldValue: string, newValue: string) {
+		if (name === 'allow-multiple' && oldValue === newValue) return
+		this.init()
+	}
+
+	init(): void {
 		this.allowMultiple = this.getAttribute('allow-multiple') === 'true'
 
 		// Obtain a reference to the child component(s)
@@ -50,7 +61,6 @@ export class CoreAccordion extends BaseComponent {
 	resetOtherItems(element: CoreAccordionItem): void {
 		if (!element) return
 		this.getItems().forEach(async item => {
-			console.dir(item)
 			const isItemActive = item !== element
 			if (isItemActive) {
 				item.collapse()
