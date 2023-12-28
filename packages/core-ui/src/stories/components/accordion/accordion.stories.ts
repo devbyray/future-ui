@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/web-components'
 import '../../index.css'
 import './accordion.css'
-import '@futureui/core-ui/accordion'
+import '../../../components/accordion/elements'
 
 import { html } from 'lit'
 

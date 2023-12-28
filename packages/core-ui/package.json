@@ -14,7 +14,9 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc && vite build",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"storybook": "storybook dev -p 6006",
+		"build-storybook": "storybook build"
 	},
 	"devDependencies": {
 		"@rollup/plugin-typescript": "^11.1.5",
@@ -22,7 +24,19 @@
 		"rollup-plugin-typescript-paths": "^1.5.0",
 		"typescript": "^5.3.3",
 		"vite": "^5.0.10",
-		"vite-plugin-dts": "^3.7.0"
+		"vite-plugin-dts": "^3.7.0",
+		"lit": "^3.1.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"storybook": "^7.6.6",
+		"@storybook/addon-a11y": "^7.6.6",
+		"@storybook/addon-docs": "^7.6.6",
+		"@storybook/addon-essentials": "^7.6.6",
+		"@storybook/addon-links": "^7.6.6",
+		"@storybook/addon-storysource": "^7.6.6",
+		"@storybook/blocks": "^7.6.6",
+		"@storybook/web-components": "^7.6.6",
+		"@storybook/web-components-vite": "^7.6.6"
 	},
 	"exports": {
 		".": {
