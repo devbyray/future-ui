@@ -13,13 +13,13 @@
 	},
 	"scripts": {
 		"dev": "vite",
-		"generate:types": "tsc src/lib.ts --declaration --emitDeclarationOnly --declarationDir dist/",
+		"generate:types": "tsc src/lib.ts --declaration --emitDeclarationOnly --declarationDir dist/ --inspect",
 		"build": "tsc && vite build && npm run generate:types",
 		"preview": "vite preview"
 	},
 	"devDependencies": {
-		"typescript": "^5.2.2",
-		"vite": "^5.0.8"
+		"typescript": "^5.3.3",
+		"vite": "^5.0.10"
 	},
 	"exports": {
 		"./lib": {
