@@ -1,3 +1,5 @@
+![](./futureui-icon.png)
+
 # @futureui/core
 
 Future UI Core is a Web Component library. We focus on:
