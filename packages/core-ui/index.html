@@ -5,45 +5,107 @@
 		<link rel="icon" type="image/svg+xml" href="/futureui-icon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Vite + TS</title>
-		<style>
-			body {
-				font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
-					Verdana, sans-serif;
-			}
-			@media (prefers-color-scheme: dark) {
-				body {
-					color: #eee;
-					background: #141419;
-				}
-
-				a {
-					color: #809fff;
-				}
-
-				fu-core-accordion-header svg {
-					fill: #809fff;
-				}
-			}
-		</style>
+		<style></style>
 	</head>
 	<body>
 		<h1>Future Core UI</h1>
 		<div class="container">
-      <h2>Details accordion</h2>
-      <fu-core-details-accordion>
-        <details>
-          <summary>Summary 1</summary>
-          <p>Content 1</p>
-        </details>
-        <details>
-          <summary>Summary 2</summary>
-          <p>Content 2</p>
-        </details>
-        <details>
-          <summary>Summary 3</summary>
-          <p>Content 3</p>
-        </details>
-      </fu-core-details-accordion>
+			<h2>Details accordion</h2>
+			<fu-core-details-accordion custom-icon="true" allow-multiple="true">
+				<details>
+					<summary>
+						<h3>Summary 1</h3>
+						<svg width="16" height="10" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+							<path
+								d="m8.425 9.355 7.399-7.34a.6.6 0 0 0 0-.849l-.99-.99a.6.6 0 0 0-.85 0L8 6.1 2.016.176a.6.6 0 0 0-.85 0l-.99.99a.6.6 0 0 0 0 .85l7.4 7.339a.6.6 0 0 0 .849 0z"
+							/>
+						</svg>
+					</summary>
+					<div>
+						<p>Content 1</p>
+						<p>Content 1</p>
+						<p>Content 1</p>
+					</div>
+				</details>
+				<details>
+					<summary>
+						<h3>Summary 2</h3>
+						<svg width="16" height="10" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+							<path
+								d="m8.425 9.355 7.399-7.34a.6.6 0 0 0 0-.849l-.99-.99a.6.6 0 0 0-.85 0L8 6.1 2.016.176a.6.6 0 0 0-.85 0l-.99.99a.6.6 0 0 0 0 .85l7.4 7.339a.6.6 0 0 0 .849 0z"
+							/>
+						</svg>
+					</summary>
+					<div>
+						<p>Content 2</p>
+						<p>Content 2</p>
+						<p>Content 2</p>
+					</div>
+				</details>
+				<details>
+					<summary>
+						<h3>Summary 3</h3>
+						<svg width="16" height="10" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+							<path
+								d="m8.425 9.355 7.399-7.34a.6.6 0 0 0 0-.849l-.99-.99a.6.6 0 0 0-.85 0L8 6.1 2.016.176a.6.6 0 0 0-.85 0l-.99.99a.6.6 0 0 0 0 .85l7.4 7.339a.6.6 0 0 0 .849 0z"
+							/>
+						</svg>
+					</summary>
+					<div>
+						<p>Content 3</p>
+						<p>Content 3</p>
+						<p>Content 3</p>
+					</div>
+				</details>
+			</fu-core-details-accordion>
+			<hr>
+			<fu-core-details-accordion custom-icon="true">
+				<details>
+					<summary>
+						<h3>Summary 1</h3>
+						<svg width="16" height="10" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+							<path
+								d="m8.425 9.355 7.399-7.34a.6.6 0 0 0 0-.849l-.99-.99a.6.6 0 0 0-.85 0L8 6.1 2.016.176a.6.6 0 0 0-.85 0l-.99.99a.6.6 0 0 0 0 .85l7.4 7.339a.6.6 0 0 0 .849 0z"
+							/>
+						</svg>
+					</summary>
+					<div>
+						<p>Content 1</p>
+						<p>Content 1</p>
+						<p>Content 1</p>
+					</div>
+				</details>
+				<details>
+					<summary>
+						<h3>Summary 2</h3>
+						<svg width="16" height="10" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+							<path
+								d="m8.425 9.355 7.399-7.34a.6.6 0 0 0 0-.849l-.99-.99a.6.6 0 0 0-.85 0L8 6.1 2.016.176a.6.6 0 0 0-.85 0l-.99.99a.6.6 0 0 0 0 .85l7.4 7.339a.6.6 0 0 0 .849 0z"
+							/>
+						</svg>
+					</summary>
+					<div>
+						<p>Content 2</p>
+						<p>Content 2</p>
+						<p>Content 2</p>
+					</div>
+				</details>
+				<details>
+					<summary>
+						<h3>Summary 3</h3>
+						<svg width="16" height="10" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+							<path
+								d="m8.425 9.355 7.399-7.34a.6.6 0 0 0 0-.849l-.99-.99a.6.6 0 0 0-.85 0L8 6.1 2.016.176a.6.6 0 0 0-.85 0l-.99.99a.6.6 0 0 0 0 .85l7.4 7.339a.6.6 0 0 0 .849 0z"
+							/>
+						</svg>
+					</summary>
+					<div>
+						<p>Content 3</p>
+						<p>Content 3</p>
+						<p>Content 3</p>
+					</div>
+				</details>
+			</fu-core-details-accordion>
 			<h2>Accordion</h2>
 			<fu-core-accordion>
 				<fu-core-accordion-item>

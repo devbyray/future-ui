@@ -1,0 +1,9 @@
+:host {
+	display: block;
+}
+section {
+	background: #eee;
+}
+details > summary {
+	cursor: pointer;
+}

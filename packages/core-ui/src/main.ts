@@ -13,3 +13,4 @@ customElements.define('fu-core-accordion-item', CoreAccordionItem)
 customElements.define('fu-core-accordion', CoreAccordion)
 customElements.define('fu-core-details-accordion', CoreDetailsAccordion)
 
+

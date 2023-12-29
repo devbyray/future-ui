@@ -26,8 +26,7 @@
 		"jsx": "preserve",
 		"baseUrl": "./",
 		"paths": {
-			"@/types": ["./src/types"],
-			"@/comp/*": ["./src/components/*"]
+			"@/types": ["./src/types"]
 		}
 	},
 	"include": ["src"]

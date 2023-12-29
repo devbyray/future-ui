@@ -1,0 +1,70 @@
+:root {
+	--fu-core-accordion-item-margin-bottom: 0;
+    --fu-core-accordion-item-border-bottom: none;
+
+    --fu-core-accordion-item-content-padding-top: 0;
+    --fu-core-accordion-item-content-padding-bottom: 0;
+
+    --fu-core-accordion-item-summary-margin: 0;
+    --fu-core-accordion-item-summary-padding: 0 0 0.8rem 0;
+
+
+	--core-accordion-content-closed-padding: 0;
+	--core-accordion-content-closed-margin: 0;
+	--core-accordion-content-closed-background-color: transparent;
+	--core-accordion-content-open-padding: 0;
+	--core-accordion-content-open-margin: 0;
+	--core-accordion-content-open-background-color: transparent;
+
+	--core-accordion-item-margin: 0;
+	--core-accordion-item-padding: 0;
+	--core-accordion-item-background-color: transparent;
+	--core-accordion-item-border-radius: 0;
+
+	--core-accordion-item-border-top: none;
+	--core-accordion-item-border-right: none;
+	--core-accordion-item-border-bottom: none;
+	--core-accordion-item-border-left: none;
+
+	--core-accordion-item-margin-open: 0;
+	--core-accordion-item-padding-open: 0;
+	--core-accordion-item-background-color-open: transparent;
+}
+
+.fu-core-details-accordion-item {
+    cursor: pointer;
+    margin-bottom: var(--fu-core-accordion-item-margin-bottom);
+    border-bottom: var(--fu-core-accordion-item-border-bottom, 0);
+}
+.fu-core-details-accordion-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+.fu-core-details-accordion-item > summary {
+    margin: var(--fu-core-accordion-item-summary-margin, 0);
+    padding: var(--fu-core-accordion-item-summary-padding, 0);
+}
+.fu-core-details-accordion-item > summary + .fu-core-details-accordion-content {
+    padding-top: var(--fu-core-accordion-item-content-padding-top, 0);
+    padding-bottom: var(--fu-core-accordion-item-content-padding-bottom, 0);
+    background-color: var(--fu-core-accordion-item-content-background-color, transparent);
+}
+.fu-core-details-accordion-item summary {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media (prefers-color-scheme: dark) {
+	.fu-core-details-accordion-item summary svg {
+		fill: #f1f1f1;
+	}
+}
+.fu-core-details-accordion-item summary svg {
+	width: 16px;
+    height: 10px;
+	transition: all 0.3s ease-in-out;
+}
+.fu-core-details-accordion-item summary svg.open {
+	transform: rotate(180deg);
+}

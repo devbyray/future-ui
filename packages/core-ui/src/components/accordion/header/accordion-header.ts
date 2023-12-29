@@ -37,7 +37,7 @@ svg.open {
 	</div>
 	<div class="core-accordion-header-icon">
 		<svg width="16" height="10" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-			<path d="m8.425 9.355 7.399-7.34a.6.6 0 0 0 0-.849l-.99-.99a.6.6 0 0 0-.85 0L8 6.1 2.016.176a.6.6 0 0 0-.85 0l-.99.99a.6.6 0 0 0 0 .85l7.4 7.339a.6.6 0 0 0 .849 0z" fill="#000" fill-rule="nonzero"/>
+			<path d="m8.425 9.355 7.399-7.34a.6.6 0 0 0 0-.849l-.99-.99a.6.6 0 0 0-.85 0L8 6.1 2.016.176a.6.6 0 0 0-.85 0l-.99.99a.6.6 0 0 0 0 .85l7.4 7.339a.6.6 0 0 0 .849 0z" />
 		</svg>
 	</div>
 </div>
