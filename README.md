@@ -51,3 +51,6 @@ After that you can use the component like this:
 
 - **Accordion**: [documentation](https://future-ui-core.vercel.app/?path=/docs/core-accordion--documentation).
 - More to come 👍
+
+## How To's
+If you want to read more on how to use or extend our components, please check out the [documentation section](./docs/index.md).
