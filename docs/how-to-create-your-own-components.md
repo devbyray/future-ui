@@ -8,15 +8,19 @@ There are 2 modes which you can use to build components.
 1. Bring your styling and use the core components
 2. Create your own custom elements
 
+---
 
-### Bring your styling and use the core components
+
+## Bring your styling and use the core components
 
 If you just want to use the @futureui/core-ui components and add your styling yourself, that is no problem at. That is something we facilitate.
 
 Follow these steps and you will be fine: [accordion component documentation](../packages/core-ui/src/components/accordion/README.md)
 
+---
 
-### Create your own custom elements
+
+## Create your own custom elements
 
 We can imagine that you want to have your own custom elements, well we support that. Better said, that's the whole purpose this component library is build like it is.
 
@@ -49,6 +53,8 @@ customElements.define('fu-theme-accordion-content', ThemeAccordionContent)
 ```
 
 You are fully in control on how to name your components 👍.
+
+---
 
 ## Questions?
 Please [create an issue](https://github.com/devbyray/future-ui/issues/new) in our repo and we love to help you out.
