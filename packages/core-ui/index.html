@@ -1,100 +1,114 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-  </head>
-  <body>
-    <h1>Future Core UI</h1>
-    <div class="container">
-      <h2>Accordion</h2>
-      <fu-core-accordion>
-        <fu-core-accordion-item>
-          <fu-core-accordion-header>
-            <h3>Header 1</h3>
-          </fu-core-accordion-header>
-          <fu-core-accordion-content>
-            <p>Content 1</p>
-            <fu-core-accordion>
-              <fu-core-accordion-item>
-                <fu-core-accordion-header>
-                  <h3>Header 1.1</h3>
-                </fu-core-accordion-header>
-                <fu-core-accordion-content>
-                  <p>Content 1.1</p>
-                  <p>Content 1.1</p>
-                  <p>Content 1.1</p>
-                </fu-core-accordion-content>
-              </fu-core-accordion-item>
-              <fu-core-accordion-item>
-                <fu-core-accordion-header>
-                  <h3>Header 1.2</h3>
-                </fu-core-accordion-header>
-                <fu-core-accordion-content>
-                  <p>Content 1.2</p>
-                  <p>Content 1.2</p>
-                  <p>Content 1.2</p>
-                </fu-core-accordion-content>
-            </fu-core-accordion>
-          </fu-core-accordion-content>
-        </fu-core-accordion-item>
-        <fu-core-accordion-item>
-          <fu-core-accordion-header>
-            <h3>Header 2</h3>
-          </fu-core-accordion-header>
-          <fu-core-accordion-content>
-            <p>Content 2</p>
-            <p>Content 2</p>
-            <p>Content 2</p>
-          </fu-core-accordion-content>
-        </fu-core-accordion-item>
-        <fu-core-accordion-item>
-          <fu-core-accordion-header>
-            <h3>Header 3</h3>
-          </fu-core-accordion-header>
-          <fu-core-accordion-content>
-            <p>Content 3</p>
-            <p>Content 3</p>
-            <p>Content 3</p>
-          </fu-core-accordion-content>
-        </fu-core-accordion-item>
-      </fu-core-accordion>
-      <hr>
-      <fu-core-accordion allow-multiple="true">
-        <fu-core-accordion-item>
-          <fu-core-accordion-header>
-            <h3>Header 1</h3>
-          </fu-core-accordion-header>
-          <fu-core-accordion-content>
-            <p>Content 1</p>
-            <p>Content 1</p>
-            <p>Content 1</p>
-          </fu-core-accordion-content>
-        </fu-core-accordion-item>
-        <fu-core-accordion-item>
-          <fu-core-accordion-header>
-            <h3>Header 2</h3>
-          </fu-core-accordion-header>
-          <fu-core-accordion-content>
-            <p>Content 2</p>
-            <p>Content 2</p>
-            <p>Content 2</p>
-          </fu-core-accordion-content>
-        </fu-core-accordion-item>
-        <fu-core-accordion-item>
-          <fu-core-accordion-header>
-            <h3>Header 3</h3>
-          </fu-core-accordion-header>
-          <fu-core-accordion-content>
-            <p>Content 3</p>
-            <p>Content 3</p>
-            <p>Content 3</p>
-          </fu-core-accordion-content>
-        </fu-core-accordion-item>
-      </fu-core-accordion>
-    </div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/futureui-icon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vite + TS</title>
+		<style>
+			body {
+				font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
+					Verdana, sans-serif;
+			}
+			@media (prefers-color-scheme: dark) {
+				body {
+					color: #eee;
+					background: #141419;
+				}
+
+				a {
+					color: #809fff;
+				}
+
+				fu-core-accordion-header svg {
+					fill: #809fff;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Future Core UI</h1>
+		<div class="container">
+      <h2>Details accordion</h2>
+      <fu-core-details-accordion>
+        <details>
+          <summary>Summary 1</summary>
+          <p>Content 1</p>
+        </details>
+        <details>
+          <summary>Summary 2</summary>
+          <p>Content 2</p>
+        </details>
+        <details>
+          <summary>Summary 3</summary>
+          <p>Content 3</p>
+        </details>
+      </fu-core-details-accordion>
+			<h2>Accordion</h2>
+			<fu-core-accordion>
+				<fu-core-accordion-item>
+					<fu-core-accordion-header>
+						<h3>Header 1</h3>
+					</fu-core-accordion-header>
+					<fu-core-accordion-content>
+						<p>Content 1</p>
+					</fu-core-accordion-content>
+				</fu-core-accordion-item>
+				<fu-core-accordion-item>
+					<fu-core-accordion-header>
+						<h3>Header 2</h3>
+					</fu-core-accordion-header>
+					<fu-core-accordion-content>
+						<p>Content 2</p>
+						<p>Content 2</p>
+						<p>Content 2</p>
+					</fu-core-accordion-content>
+				</fu-core-accordion-item>
+				<fu-core-accordion-item>
+					<fu-core-accordion-header>
+						<h3>Header 3</h3>
+					</fu-core-accordion-header>
+					<fu-core-accordion-content>
+						<p>Content 3</p>
+						<p>Content 3</p>
+						<p>Content 3</p>
+					</fu-core-accordion-content>
+				</fu-core-accordion-item>
+			</fu-core-accordion>
+			<hr />
+			<fu-core-accordion allow-multiple="true">
+				<fu-core-accordion-item>
+					<fu-core-accordion-header>
+						<h3>Header 1</h3>
+					</fu-core-accordion-header>
+					<fu-core-accordion-content>
+						<p>Content 1</p>
+						<p>Content 1</p>
+						<p>Content 1</p>
+					</fu-core-accordion-content>
+				</fu-core-accordion-item>
+				<fu-core-accordion-item>
+					<fu-core-accordion-header>
+						<h3>Header 2</h3>
+					</fu-core-accordion-header>
+					<fu-core-accordion-content>
+						<p>Content 2</p>
+						<p>Content 2</p>
+						<p>Content 2</p>
+					</fu-core-accordion-content>
+				</fu-core-accordion-item>
+				<fu-core-accordion-item>
+					<fu-core-accordion-header>
+						<h3>Header 3</h3>
+					</fu-core-accordion-header>
+					<fu-core-accordion-content>
+						<p>Content 3</p>
+						<p>Content 3</p>
+						<p>Content 3</p>
+					</fu-core-accordion-content>
+				</fu-core-accordion-item>
+			</fu-core-accordion>
+		</div>
+		<script type="module" src="/src/main.ts"></script>
+	</body>
 </html>
